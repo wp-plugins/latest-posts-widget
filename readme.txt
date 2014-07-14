@@ -1,5 +1,5 @@
 ﻿=== Latest Posts Widget ===
-Contributors: mkrdip
+Contributors: mkrdip, tareq1988
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=mkrdip%40yahoo%2ecom&lc=US&item_name=WordPress%20Plugins%20by%20Mrinal&item_number=04&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted
 Tags: posts, widget, latest posts widget, posts widget, recent posts, latest posts, post thumbnails
 Requires at least: 2.8
