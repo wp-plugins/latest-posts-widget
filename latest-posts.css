@@ -1,6 +1,6 @@
 /*
 Default CSS Styles for the Latest Posts Widget plugin
-Version: 1.0
+Version: 1.1
 */
 .latest-posts-widget * {
 	margin: 0;
@@ -26,11 +26,11 @@ Version: 1.0
 	margin: 5px 10px 0 0;
 }
 .latest-posts-widget ul li {
+  border-bottom: 1px solid #ccc;
 	list-style: none;
 	list-style-type: none;
 	margin: 3px 0;
 	padding: 3px 0;
-	border-bottom: 1px solid #ccc;
 }
 .latest-posts-widget ul li:last-child {
 	border-bottom: none;
@@ -39,8 +39,9 @@ Version: 1.0
 	display: inline;
 }
 .latest-posts-widget .post-entry { 
-   padding: 0 0 5px 0;
-   overflow: hidden;
+  overflow: hidden;
+  padding: 0 0 5px 0;
+
 }
 .latest-posts-widget .comment-num {
 }

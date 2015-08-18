@@ -2,9 +2,9 @@
 /*
 Plugin Name: Latest Posts Widget
 Plugin URI: https://wordpress.org/plugins/latest-posts-widget/
-Description: Adds a widget that shows the most recent posts of your site with excerpt, featured image, date by sorting & ordering feature
+Description: Adds a widget that shows the most recent posts of your site with Thumbnail, Excerpt, Date etc options.
 Author: Mrinal Kanti Roy
-Version: 1.0
+Version: 1.1
 Author URI: http://profiles.wordpress.org/mkrdip/
 */
 
@@ -48,9 +48,9 @@ add_action( 'init', 'lp_add_image_size' );
  */
 class LP_Post_Widget extends WP_Widget {
 
-	function LP_Post_Widget() {
+	function __construct() {
 		$widget_ops = array( 'classname'   => 'latest-posts-widget', 'description' => __( 'List latest posts of your site with thumbnails' ) );
-		$this->WP_Widget( 'latest-posts-widget', __( 'Latest Posts' ), $widget_ops );
+		parent::__construct( 'latest-posts-widget', __( 'Latest Posts' ), $widget_ops );
 	}
 
 	// Displays latest posts widget on blog.
@@ -183,9 +183,9 @@ class LP_Post_Widget extends WP_Widget {
 		$excerpt_length = $instance['excerpt_length'];
 		$comment_num    = $instance['comment_num'];
 		$date           = $instance['date'];
-		$date           = $instance['thumb'];
-		$date           = $instance['thumb_w'];
-		$date           = $instance['thumb_h'];
+		$thumb          = $instance['thumb'];
+		$thumb_w        = $instance['thumb_w'];
+		$thumb_h        = $instance['thumb_h'];
 		?>
 
 		<p>
